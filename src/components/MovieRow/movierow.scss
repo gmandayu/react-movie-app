@@ -1,0 +1,65 @@
+.movieRow {
+	margin-bottom: 30px;
+	& h2 {
+		margin: 0px 0px 0px 30px;
+	}
+	&__List {
+		width: 99999999px;
+		transition: all ease 0.5s;
+		&Area {
+			overflow-x: hidden;
+			padding-left: 30px;
+		}
+	}
+	&__Item {
+		display: inline-block;
+		width: 150px;
+		cursor: pointer;
+
+		& img {
+			size-adjust: 10px;
+			width: 100%;
+			transform: scale(0.9);
+			transition: all ease 0.2s;
+			border-radius: 8px;
+			// box-shadow: black;
+
+			&:hover {
+				transform: scale(1);
+				transition: 0.2s;
+			}
+		}
+	}
+
+	&__Left {
+		left: 0;
+	}
+	&__Right {
+		right: 0;
+	}
+	&__Left,
+	&__Right {
+		align-items: center;
+		background-color: rgba(0, 0, 0, 0.6);
+		cursor: pointer;
+		display: flex;
+		height: 225px;
+		justify-content: center;
+		opacity: 0;
+		overflow: hidden;
+		position: absolute;
+		transition: all ease 0.5s;
+		width: 40px;
+		z-index: 99;
+		@media (max-width: 760px) {
+			& {
+				opacity: 1;
+			}
+		}
+	}
+
+	&:hover &__Left,
+	&:hover &__Right {
+		opacity: 1;
+	}
+}

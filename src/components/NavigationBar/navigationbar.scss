@@ -1,0 +1,54 @@
+header {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 30px;
+	background: transparent;
+	transition: all ease 0.5s;
+
+	&.black {
+		background-color: #141414;
+	}
+
+	&__Logo {
+		height: 30px;
+
+		& img {
+			height: 25px;
+		}
+	}
+
+	&__User {
+		height: 35px;
+
+		& img {
+			height: 100%;
+			border-radius: 3px;
+		}
+	}
+}
+
+.search {
+	&__Box,
+	&__Button {
+		background-color: transparent;
+		height: 30px;
+		border-color: transparent;
+		color: #fff;
+		display: flex; // delete this.
+	}
+}
+
+a {
+			text-decoration: none;
+			font-size: 50px;
+			// padding-left: 1px;
+			font-weight: bolder;
+			color: rgb(250, 36, 36);
+		}
