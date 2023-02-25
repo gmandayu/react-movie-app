@@ -22,10 +22,10 @@ export default ({ item }) => {
 					<div className="featured__Name">{item.original_name}</div>
 
 					<div className="featured__Info">
-						<div className="featured__Points">{item.vote_average} pontos</div>
+						<div className="featured__Points">{item.vote_average} points</div>
 						<div className="featured__Year">{firstDate.getFullYear()}</div>
 						<div className="featured__Seasons">
-							{item.number_of_seasons} temporada{item.number_of_seasons !== 1 ? "s" : ""}
+							{item.number_of_seasons} Season{item.number_of_seasons !== 1 ? "s" : ""}
 						</div>
 					</div>
 

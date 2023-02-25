@@ -28,7 +28,7 @@ export default ({ title, items }) => {
 		<div className="movieRow">
 			<h2>{title}</h2>
 			<div className="movieRow__Left" onClick={handleLeftArrow}>
-				<FaAngleLeft style={{ fontSize: 50 }} /> 
+				<FaAngleLeft style={{ fontSize: 50 }} />
 			</div>
 			<div className="movieRow__Right" onClick={handleRightArrow}>
 				<FaAngleRight style={{ fontSize: 50 }} />

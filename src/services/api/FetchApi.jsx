@@ -15,56 +15,56 @@ export default {
 				slug: "originals",
 				title: "Originals",
 				items: await fetchingAPI(
-					`/discover/tv?with_networks=213&language=pt-BR&api_key=${api_key}`,
+					`/discover/tv?with_networks=213&language=en-US&api_key=${api_key}`,
 				),
 			},
 			{
 				slug: "sci-fi",
 				title: "Science Fiction",
 				items: await fetchingAPI(
-					`/discover/movie?with_genres=878&language=pt-BR&api_key=${api_key}`,
+					`/discover/movie?with_genres=878&language=en-US&api_key=${api_key}`,
 				),
 			},
 			{
 				slug: "fantasy",
 				title: "Fantasy",
 				items: await fetchingAPI(
-					`/discover/movie?with_genres=14&language=pt-BR&api_key=${api_key}`,
+					`/discover/movie?with_genres=14&language=en-US&api_key=${api_key}`,
 				),
 			},
 			{
 				slug: "action",
 				title: "Action",
 				items: await fetchingAPI(
-					`/discover/movie?with_genres=28&language=pt-BR&api_key=${api_key}`,
+					`/discover/movie?with_genres=28&language=en-US&api_key=${api_key}`,
 				),
 			},
 			{
 				slug: "comedy",
 				title: "Comedy",
 				items: await fetchingAPI(
-					`/discover/movie?with_genres=35&language=pt-BR&api_key=${api_key}`,
+					`/discover/movie?with_genres=35&language=en-US&api_key=${api_key}`,
 				),
 			},
 			{
 				slug: "horror",
 				title: "Horror",
 				items: await fetchingAPI(
-					`/discover/movie?with_genres=27&language=pt-BR&api_key=${api_key}`,
+					`/discover/movie?with_genres=27&language=en-US&api_key=${api_key}`,
 				),
 			},
 			{
 				slug: "romance",
 				title: "Romance",
 				items: await fetchingAPI(
-					`/discover/movie?with_genres=10749&language=pt-BR&api_key=${api_key}`,
+					`/discover/movie?with_genres=10749&language=en-US&api_key=${api_key}`,
 				),
 			},
 			{
 				slug: "documentary",
 				title: "Documentary",
 				items: await fetchingAPI(
-					`/discover/movie?with_genres=99&language=pt-BR&api_key=${api_key}`,
+					`/discover/movie?with_genres=99&language=en-US&api_key=${api_key}`,
 				),
 			},
 		];
@@ -74,10 +74,10 @@ export default {
 		if (movieId) {
 			switch (type) {
 				case "movie":
-					info = await fetchingAPI(`/movie/${movieId}?language=pt-BR&api_key=${api_key}`);
+					info = await fetchingAPI(`/movie/${movieId}?language=en-US&api_key=${api_key}`);
 					break;
 				case "tv":
-					info = await fetchingAPI(`/tv/${movieId}?language=pt-BR&api_key=${api_key}`);
+					info = await fetchingAPI(`/tv/${movieId}?language=en-US&api_key=${api_key}`);
 					break;
 				default:
 					info = null;

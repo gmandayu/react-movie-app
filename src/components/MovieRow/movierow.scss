@@ -18,11 +18,15 @@
 
 		& img {
 			size-adjust: 10px;
+
+			height: 250px;
 			width: 100%;
+
 			transform: scale(0.9);
 			transition: all ease 0.2s;
 			border-radius: 8px;
 			// box-shadow: black;
+			object-fit: cover;
 
 			&:hover {
 				transform: scale(1);
